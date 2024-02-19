@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+    {% load static %}
+    <link rel="icon" href="{% static "images/Estate.png" %}">
+    <style>
+        img{width: 300px;height: 200px;}
+        h1{color: white;background-color: red;line-height: 50px;text-align: center;font-size: 40px}
+        h1:hover{background-color: aqua}
+    </style>
+</head>
+<body>
+<h1>Homepage</h1>
+<p>Here are some of the wild animals yuo know.</p>
+<img src="{% static 'images/lion.jpeg' %}" alt="">
+<img src="{% static 'images/cheetah.jpeg' %}" alt="">
+<img src="{% static 'images/zebra.jpeg' %}" alt="">
+<img src="{% static 'images/tiger.jpeg' %}" alt="">
+
+</body>
+</html>
