@@ -7,12 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Homepage</title>
     {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
     <link rel="icon" href="{% static "images/Estate.png" %}">
     <style>
         img{width: 300px;height: 200px;}
         h1{color: white;background-color: red;line-height: 50px;text-align: center;font-size: 40px}
         h1:hover{background-color: aqua}
     </style>
+    
 </head>
 <body>
 <h1>Homepage</h1>
@@ -21,6 +23,9 @@
 <img src="{% static 'images/cheetah.jpeg' %}" alt="">
 <img src="{% static 'images/zebra.jpeg' %}" alt="">
 <img src="{% static 'images/tiger.jpeg' %}" alt="">
-
+<br><br>
+<h1>Payment.</h1>
+<p class="paragraph2"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at esse magnam recusandae soluta. Aliquam assumenda doloribus incidunt nisi reprehenderit? Asperiores, dolore esse illum magni nesciunt numquam omnis repellendus voluptatum.</span><span>Eos, repudiandae tenetur. Corporis iste laboriosam placeat reiciendis rerum sapiente, soluta veritatis. Aliquam distinctio doloribus ducimus eos iste nostrum quaerat quas quo sapiente sint? Aperiam hic itaque repellendus tempora veniam.</span></p>
+<img src="{% static 'images/lion.jpeg' %}" alt="" id="image">
 </body>
 </html>
