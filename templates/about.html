@@ -8,17 +8,21 @@
     <title>About</title>
     {% load static %}
     <link rel="icon" href="{% static "images/Estate.png" %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
      <style>
          table {width: 50%;border-spacing: 5px;margin: auto;}
          th,td {text-align: center;padding: 8px}
          th {background-color: green;border-collapse: separate;border-radius: 3px}
          td {background-color: lightgreen}
-         body{display: grid;}
+         body{display: grid;background-image: url("../static/images/tiger.jpeg");background-repeat: no-repeat;background-size: cover}
+         h1{color: white}
      </style>
 </head>
 <body>
+<a href="{% url 'homepage' %}" class="btn btn-primary ">Home</a>
+<a href="{% url 'form' %}" class="btn btn-success ">Form</a>
 <h1>About page.</h1>
-           
 <table>
     <tr>
         <th>Product ID</th>
